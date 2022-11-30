@@ -14,4 +14,4 @@ Design Process
 
 #site goals - the site offers different genre of anime wallpapers for users to use.
 
-click here for the website: thianping-ng.github.io/interactive-development-asg-1
+click here for the website: https://thianping-ng.github.io/interactive-development-asg-1
