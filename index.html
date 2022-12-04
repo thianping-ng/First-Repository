@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aniyo anime wallpaper</title>
+    <link rel="stylesheet" href="home_page.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:ital,wght@1,100&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!--this section is for navigation bar-->
+    <section>
+      <nav>
+        <input type="checkbox" id="button-check" />
+        <label for="button-check">
+          <span class="menu-logo">
+            <ion-icon name="menu-outline"></ion-icon>
+          </span>
+        </label>
+        <label class="logo-name">Aniyo</label>
+        <ul>
+          <li><a href="about.html">About Aniyo</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="login.html">Log in</a></li>
+          <li><a href="signup.html">Sign up</a></li>
+        </ul>
+      </nav>
+    </section>
+    <!--this section is for navigation bar-->
+
+    <!--animated image from left to right-->
+    <div class="moving-image">
+      <div class="moving-slider">
+        <!--button that allows user to interact the sliding image-->
+        <input type="radio" name="radio-btn" id="radio1" />
+        <input type="radio" name="radio-btn" id="radio2" />
+        <input type="radio" name="radio-btn" id="radio3" />
+        <input type="radio" name="radio-btn" id="radio4" />
+        <!--button that allows user to interact the sliding image-->
+        <div class="naruto slide first">
+          <img src="HTML/image/naruto_vs_sasuke.webp" />
+          <div class="image-overlay">
+            <h1 class="title">Naruto</h1>
+            <p class="description">Shidori your Wallpaper</p>
+          </div>
+        </div>
+        <div class="slide">
+          <img src="HTML/image/one punch man.jpg" />
+          <div class="image-overlay">
+            <h1 class="title">One Punch Man</h1>
+            <p class="description">Death to Wallpaper</p>
+          </div>
+        </div>
+
+        <div class="slide">
+          <img src="HTML/image/fairy tail.jpg" />
+          <div class="image-overlay">
+            <h1 class="title">Fairy Tail</h1>
+            <p class="description">Will always watch over your Wallpaper</p>
+          </div>
+        </div>
+
+        <div class="slide">
+          <img src="HTML/image/d gray man.jpg" />
+          <div class="image-overlay">
+            <h1 class="title">D Gray Man</h1>
+            <p class="description">
+              When you lose sight of your path the Wallpaper shall be your
+              destination
+            </p>
+          </div>
+        </div>
+        <!--animated image from left to right-->
+
+        <!--auto navigation for radio button-->
+        <div class="auto-navigation">
+          <div class="auto-btn1"></div>
+          <div class="auto-btn2"></div>
+          <div class="auto-btn3"></div>
+          <div class="auto-btn4"></div>
+        </div>
+        <!--auto navigation for button-->
+      </div>
+      <!--manual navigation for button-->
+      <div class="manual-navigation">
+        <label for="radio1" class="manual-btn"></label>
+        <label for="radio2" class="manual-btn"></label>
+        <label for="radio3" class="manual-btn"></label>
+        <label for="radio4" class="manual-btn"></label>
+      </div>
+    </div>
+    <!--this section allows user to choose genre of images-->
+    <div id="overlay">
+      <h1 id="genre">Genre Selection to download</h1>
+      <div class="selection-background">
+        <img class="anime" src="HTML/image/mecha.jpg" />
+        <div class="anime-overlay">
+          <div id="anime-header">
+            <a href="HTML/Genre_mecha.html">
+              <h1>Mecha</h1>
+            </a>
+          </div>
+        </div>
+        <img class="anime" src="HTML/image/drama genre selection.webp" />
+        <div class="anime-overlay">
+          <div id="anime-header">
+            <a href="HTML/Genre_drama.html">
+              <h1>Drama</h1>
+            </a>
+          </div>
+        </div>
+
+        <img class="anime" src="HTML/image/villian.jpg" />
+
+        <div class="anime-overlay">
+          <div id="anime-header">
+            <a href="HTML/genre_action.html">
+              <h1>Action</h1>
+            </a>
+          </div>
+        </div>
+
+        <img class="anime" src="HTML/image/horror.jpg" />
+
+        <div class="anime-overlay">
+          <div id="anime-header">
+            <a href="HTML/Genre_Psychological.html">
+              <h1>Psycological</h1>
+            </a>
+          </div>
+        </div>
+
+        <img class="anime" src="HTML/image/asta.jpg" />
+
+        <div class="anime-overlay">
+          <div id="anime-header">
+            <a href="HTML/Genre_magic.html">
+              <h1>Magic</h1>
+            </a>
+          </div>
+        </div>
+
+        <img class="anime" src="HTML/image/romance.jpg" />
+
+        <div class="anime-overlay">
+          <div id="anime-header">
+            <a href="HTML/Genre_romance.html">
+              <h1>Romance</h1>
+            </a>
+          </div>
+        </div>
+
+        <img class="anime" src="HTML/image/slice of life genre selection.jpg" />
+
+        <div class="anime-overlay">
+          <div id="anime-header">
+            <a href="HTML/Genre_slice of life.html">
+              <h1>Slice of life</h1>
+            </a>
+          </div>
+        </div>
+
+        <img class="anime" src="HTML/image/war.jpeg" />
+
+        <div class="anime-overlay">
+          <div id="anime-header">
+            <a href="HTML/Genre_violence.html">
+              <h1>violence</h1>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--this section allows user to choose genre of images-->
+
+    <!--this section is about using javascript to animate the motion of the sliding images-->
+    <script type="text/javascript">
+      var count = 1;
+      setInterval(function () {
+        document.getElementById("radio" + count).checked = true;
+        count++;
+        if (count > 4) {
+          count = 1;
+        }
+      }, 4000);
+    </script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <!--this section is about using javascript to animate the motion of the sliding images-->
+  </body>
+</html>

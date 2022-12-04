@@ -1,0 +1,165 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+    background-color: black;
+}
+.background{
+    width: 100%;
+    height: 100vh;
+    width: 200%;
+}
+.label{
+    color: whitesmoke;
+    font-family: "Roboto",sans-serif;
+    font-size: 53px;
+    width: 100%;
+    text-align: center;
+    margin-top: -47%;
+    margin-left: 33%;
+}
+.about-aniyo{
+    position: relative;
+    font-size: 19px;
+    text-transform: lowercase;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 50px;
+    margin: -48% 3% auto auto;
+    margin-left: 70%;
+    color: white;
+    text-transform: capitalize;
+    font-family: "Roboto",sans-serif;
+    display: flex;
+    flex-direction: column;
+    z-index: 10;
+}
+
+.logo{
+    font-size:26px;
+    top:0;
+    left:0;
+    width: 0;
+    font-family: "Roboto",sans-serif;
+    margin-left: 2%;
+    margin-top: 1%;
+}
+
+.header{
+    color: white;
+}
+/*user can interarct the logo to return to home page*/
+.header:hover{
+    display: inline-block;
+    border-radius: 30px;
+    background-color: lightcoral;
+    transition: 0.5s;
+    padding: 10px;
+}
+img{
+    width: 70%;
+    height: 80vh;
+    margin-top: 1%;
+    margin-left:1%;
+    border-radius: 20px;
+}
+@media (max-width: 1000px){
+    .about-aniyo{
+        position: absolute;
+        font-size: 20px;
+        text-transform: lowercase;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        margin: -80% -5% auto 50%;
+        color: whitesmoke;
+        z-index: 9;
+    }
+    img{
+        position:absolute;
+        margin-top: -73%;
+        width: 50%;
+        z-index: 8;
+    }
+    .label{
+        position: absolute;
+        margin-top: -82%;
+        margin-left: 25%;
+        z-index: 10;
+    }
+
+}
+
+
+@media (max-width: 952px){
+
+    .about-aniyo{
+        position: absolute;
+        font-size: 20px;
+        text-transform: lowercase;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        margin: -90% -5% auto 50%;
+        color: whitesmoke;
+        z-index: 9;
+    }
+    img{
+        position:absolute;
+        margin-top: -80%;
+        width: 50%;
+        z-index: 8;
+    }
+    .label{
+        position: absolute;
+        margin-top: -116%;
+        margin-left: 25%;
+        z-index: 10;
+    }
+}
+
+@media (max-width: 800px){
+    .about-aniyo{
+        position: absolute;
+        font-size: 20px;
+        text-transform: lowercase;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        margin: -98% -5% auto 50%;
+        color: whitesmoke;
+        z-index: 9;
+    }
+    img{
+        position:absolute;
+        margin-top: -90%;
+        width: 50%;
+        z-index: 8;
+    }
+    .label{
+        position: absolute;
+        margin-top: -100%;
+        margin-left: 25%;
+        z-index: 10;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .about-aniyo{
+        position: absolute;
+        font-size: 20px;
+        text-transform: lowercase;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        margin: -96% -5% auto 50%;
+        color: whitesmoke;
+        z-index: 9;
+    }
+    img{
+        position:absolute;
+        margin-top: -80%;
+        width: 50%;
+        z-index: 8;
+    }
+    .label{
+        position: absolute;
+        margin-top: -100%;
+        margin-left: 25%;
+        z-index: 10;
+    }
+}
