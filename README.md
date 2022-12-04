@@ -39,9 +39,9 @@ Features 8 - in each of the genre section which the users enter, the navigation 
 Features Left to implement
 
 a form filling page which the user can interact with validation. however the site won't save the infomation they've entered.
--------------------------
-Technologies Used
 
+Technologies Used
+------------------
 
 -HTML
 
@@ -50,9 +50,9 @@ Technologies Used
 -Javascript
 
 -<ion-icon name="menu-outline"></ion-icon>
---------------------------
-Testing:
 
+Testing:
+---------
 contact form:
 
 try submitting the contact form error message appears.
@@ -86,9 +86,9 @@ Credits
 
 
 Media
+------
 -the photos used in this site were obtained from google image.
 
 Acknowledgements
-
-
+-----------------
 i receive guidance from youtube about how the site design.
