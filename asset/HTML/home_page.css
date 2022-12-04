@@ -1,0 +1,799 @@
+*{
+    /*set position to top of the page*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background: #3D1D19;
+}
+/*navigation position set to top*/
+nav{
+    position: absolute;
+    background: black;
+    height: 10vh;
+    width: 57.5%;
+    margin: -1% auto;
+    position: fixed;
+    margin-left: 25%;
+    opacity: 0.6;
+    border-radius: 20px;
+    z-index: 10;
+    font-family: "Roboto",sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+label.logo-name{
+    color: lightgoldenrodyellow;
+    font-size: 35px;
+    line-height: 90px;
+    padding: 0 20px;
+    font-weight:bold;
+}
+/*navigation menu bar set to far right of the menu at top*/
+nav ul{
+    float:right;
+    margin-right: 40px;
+    
+}
+/*align to center the navigation bar*/
+nav ul li{
+    display:inline-block;
+    line-height: 95px;
+    margin: 0 4px;
+
+    
+}
+nav ul li a{
+    color: lightgoldenrodyellow;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight:500;
+
+}
+/*when cursor hover over text, transition take place*/
+a:hover{
+    position: relative;
+    background-color:lightcoral;
+    transition: 0.5s;
+    border-radius: 20px;
+    padding: 7px;
+    color:black;
+    font-weight: bold;   
+}
+
+
+.menu-logo{
+    font-size: 40px;
+    color: white;
+    float:right;
+    line-height: 85px;
+    margin-right: 40px;
+    cursor: pointer;
+    display:none;
+}
+/*allows user to interact the menu bar in portrait mode*/
+#button-check{
+    display: none;
+}
+/*sliding image with content hidden from overflowing*/
+.moving-image{
+    width: 875px;
+    height: 500px;
+    border-radius: 10px;
+    margin-left: 26%;
+    margin-right: auto;
+    overflow: hidden;
+
+}
+/*with and height of the moving image*/
+.moving-slider{
+    width: 500%;
+    height: 500px;
+    display: flex;
+    margin: 5%;
+}
+
+/*icon to showcase the moving image*/
+.moving-slider input{
+    display: none;
+}
+/*transition of image by giving a width space for the image to be animated*/
+.slide{
+    width: 20%;
+    transition: 2s;
+}
+
+/*background color of the text hovering over the image*/
+.image-overlay{
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    margin-left: -5.0%;
+    margin-top: -57.6%;
+    color:white;
+    opacity: 0.7;
+    text-align: center;
+    width: 90%;
+    height: 90%;
+    background: black;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.title{
+    font-size: 5em;
+    text-align: center;
+    align-items: center;
+    font-weight:bold;
+    font-family: "Roboto",sans-serif;
+}
+.description{
+    font-size: 1.5em;
+    text-align: center;
+    align-items: center;
+    font-family: "Roboto",sans-serif;
+    font-weight: bold;
+}
+/*with and height of image and positioning it*/
+.slide img{
+    width: 780px;
+    height: 500px;
+    margin-top: 4%;
+    margin-left: -5%;
+}
+#overlay{
+    border: 2px solid black;
+    border-radius: 20px;
+    margin-top: 5%;
+    background: black;
+    opacity: 0.8;
+    width: 90%;
+    margin-left: 5%;
+}
+#genre{
+    color: white;
+    margin-left: 26%;
+    margin-top: 5%;
+    font-family: 'Roboto',sans-serif;
+    font-weight: bolder;
+    font-size: 60px;
+}
+/*display the image in grid layout*/
+.selection-background{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: 5%;
+    border-radius: 4%;
+    margin-left: 3%;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+
+.selection-background img{
+    height: 90%;
+    width: 180%;
+    border-radius: 20px;
+    border: 4px solid black;
+}
+/*background color of the text when hoving over the image*/
+.anime-overlay{
+    justify-content: center;
+    align-items: center;
+    margin-left: -100%;
+    margin-top: 0%;
+    color:white;
+    opacity: 0.7;
+    text-align: center;
+    width: 180%;
+    height: 90%;
+    background: black;
+    border-radius: 20px;
+    opacity: 0;
+    font-family: "Roboto",sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+}
+#anime-header h1{
+    color: white;
+    background: none;
+}
+
+
+
+.anime-overlay:hover{
+    display:block;
+    opacity: 0.6;
+    cursor: pointer;
+    transition: 1s;
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+
+
+
+/*set manual button location*/
+.manual-navigation{
+    position: absolute;
+    width: 500px;
+    margin: -3.61% 9.9%;
+    display: flex;
+    justify-content: center;
+    
+}
+.manual-btn{
+    border: 2px solid #40D3DC;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+    display: block;
+}
+/*set manual button location*/
+
+
+/*every element in the parent element not just the last element*/
+.manual-btn:not(:last-child){
+    margin-right: 2%;
+}
+
+.manual-btn:hover{
+    background: #40D3DC;
+}
+/*transition of the each sliding image animated from left to right*/
+#radio1:checked ~ .first{
+    margin-left: 0%;
+}
+
+#radio2:checked ~ .first{
+    margin-left: -20%;
+}
+
+#radio3:checked ~ .first{
+    margin-left: -40%;
+}
+
+#radio4:checked ~ .first{
+    margin-left: -60%;
+}
+/*transition of the each sliding image animated from left to right*/
+
+/*set the location of the auto navigation bar*/
+.auto-navigation{
+    position: absolute;
+    display: flex;
+    width: 875px;
+    justify-content: center;
+    margin-top: 32.2%;
+    margin-left: -5.1%;
+    
+}
+
+.auto-navigation div{
+    border: 2px solid #40D3DC;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 2s;
+    margin-left: -0.9%;
+}
+/*set the location of the auto navigation bar*/
+
+/*transition of the each sliding image animated from left to right*/
+.auto-navigation div:not(:last-child){
+    margin-right: 2%;
+}
+
+#radio1:checked ~ .auto-navigation .auto-btn1{
+    background: #40D3DC;
+}
+
+#radio2:checked ~ .auto-navigation .auto-btn2{
+    background: #40D3DC;
+}
+
+#radio3:checked ~ .auto-navigation .auto-btn3{
+    background: #40D3DC;
+}
+
+#radio4:checked ~ .auto-navigation .auto-btn4{
+    background: #40D3DC;
+}
+/*transition of the each sliding image animated from left to right*/
+
+@media screen and (max-width: 420px) and (-webkit-min-device-pixel-ratio: 2){
+    .menu-logo{
+        display: block;
+    }
+    ul{
+        width: 100%;
+        top: 60%;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+        background-color: black;
+        margin-top: 7%;
+        height: 100vh;
+        position: absolute;
+    }
+    nav {
+        width: 90%;
+        margin-top: 0%;
+        margin-left: -1%;
+    }
+    nav ul li{
+        display: block;
+    }
+    nav ul li a{
+        color: #FCFAE6;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size:  21px;
+        font-weight: 500;
+    }
+    a:hover{
+        color: whitesmoke;
+    }
+    #button-check{
+        display: none;
+    }
+    #button-check:checked ~ ul{
+        left: 0;
+    }
+    nav ul li a.active_sign-in{
+        display: inline-block;
+        border-radius: 10px;
+    }
+    nav ul li a.active_sign-up{
+        display: inline-block;
+        border-radius: 10px;
+    }
+    .anime-img{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .anime-img img{
+        margin-top:10%;
+    }
+    #anime-header h1{
+        width: 100%;
+        height: 100%;
+        font-size: 36px;
+        margin-top: 20%;
+    }
+    .anime-overlay:hover{
+        position: relative;
+        width: 120%;
+        margin-left: -70%;
+    }
+    .moving-slider{
+        margin: 30%;
+    }
+    .selection-background{
+        margin: 10% 16%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-column-gap: 3%;
+    }
+    .selection-background img{
+        width: 500%;
+    }
+    .moving-image{
+        width: 100%;
+        margin-left: 7%;
+    }
+    .slide{
+        width: 20%;
+        margin-left: 2%;
+    }
+    .slide img{
+        width: 100%;
+        height: 60%;
+        margin-left: -90%;
+        border-radius: 20px;
+    }
+    .manual-navigation{
+        margin-top: -26%;
+        margin-left: -10%;
+        display: none;
+    }
+
+    .auto-navigation{
+        margin-top: 84%;
+        margin-left: -58.7%;
+        display:none
+    }
+    .image-overlay{
+        color:white;
+        opacity: 0.7;
+        text-align: center;
+        height: 60%;
+        margin-left: -90%;
+        border-radius: 20px;
+        background: black;
+        display: flex;
+        flex-direction: column;
+        margin-top: -81%;
+        width: 100%;
+
+    }
+    .title{
+        font-size: 50px;
+    }
+    .description{
+        font-size: 1.2em;
+    }
+ 
+
+    .manual-btn:hover{
+        cursor: pointer;
+    }
+
+    .manual-btn:not(:last-child){
+        margin-right: 2%;
+    }
+    
+    .manual-btn:hover{
+        background: #40D3DC;
+    }
+    
+    #radio1:checked ~ .first{
+        margin-left: 12%;
+    }
+    
+    #radio2:checked ~ .first{
+        margin-left: -11%;
+    }
+    
+    #radio3:checked ~ .first{
+        margin-left: -32%;
+    }
+    
+    #radio4:checked ~ .first{
+        margin-left: -55%;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .menu-logo{
+        display: block;
+    }
+    ul{
+        width: 100%;
+        top: 60%;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+        background-color: black;
+        margin-top: 7%;
+        height: 100vh;
+        position: absolute;
+    }
+    nav {
+        width: 101%;
+        margin-top: 0%;
+        margin-left: -1%;
+    }
+    nav ul li{
+        display: block;
+    }
+    nav ul li a{
+        color: #FCFAE6;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size:  21px;
+        font-weight: 500;
+    }
+    a:hover{
+        color: whitesmoke;
+    }
+    #button-check{
+        display: none;
+    }
+    #button-check:checked ~ ul{
+        left: 0;
+    }
+    nav ul li a.active_sign-in{
+        display: inline-block;
+        border-radius: 10px;
+    }
+    nav ul li a.active_sign-up{
+        display: inline-block;
+        border-radius: 10px;
+    }
+    .anime-img{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .anime-img img{
+        margin-top:10%;
+    }
+    #anime-header h1{
+        width: 100%;
+        height: 100%;
+        font-size: 36px;
+        margin-top: 20%;
+    }
+    .anime-overlay:hover{
+        position: relative;
+        width: 120%;
+        margin-left: -70%;
+    }
+    .moving-slider{
+        margin: 20%;
+    }
+    .selection-background{
+        margin: 10% 5%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-column-gap: 15%;
+    }
+    .selection-background img{
+        width: 500%;
+    }
+    .moving-image{
+        width: 100%;
+        margin-left: 7%;
+    }
+    .slide{
+        width: 20%;
+        margin-left: 2%;
+    }
+    .slide img{
+        width: 100%;
+        height: 60%;
+        margin-left: -90%;
+        border-radius: 20px;
+    }
+    .manual-navigation{
+        margin-top: -26%;
+        margin-left: -10%;
+        display: none;
+    }
+
+    .auto-navigation{
+        margin-top: 84%;
+        margin-left: -58.7%;
+        display:none
+    }
+    .image-overlay{
+        color:white;
+        opacity: 0.7;
+        text-align: center;
+        height: 60%;
+        margin-left: -90%;
+        border-radius: 20px;
+        background: black;
+        display: flex;
+        flex-direction: column;
+        margin-top: -41.0%;
+        width: 100%;
+
+    }
+    .title{
+        font-size: 50px;
+    }
+    .description{
+        font-size: 1.2em;
+    }
+ 
+
+    .manual-btn:hover{
+        cursor: pointer;
+    }
+
+    .manual-btn:not(:last-child){
+        margin-right: 2%;
+    }
+    
+    .manual-btn:hover{
+        background: #40D3DC;
+    }
+    
+    #radio1:checked ~ .first{
+        margin-left: 12%;
+    }
+    
+    #radio2:checked ~ .first{
+        margin-left: -8%;
+    }
+    
+    #radio3:checked ~ .first{
+        margin-left: -29%;
+    }
+    
+    #radio4:checked ~ .first{
+        margin-left: -53%;
+    }
+}
+
+
+
+@media screen and (max-width: 900px){
+    .menu-logo{
+        display: block;
+    }
+    ul{
+        width: 100%;
+        top: 60%;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+        background-color: black;
+        margin-top: 7%;
+        height: 100vh;
+        position: absolute;
+    }
+    nav {
+        width: 101%;
+        margin-top: 0%;
+        margin-left: -1%;
+    }
+    nav ul li{
+        display: block;
+    }
+    nav ul li a{
+        color: #FCFAE6;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size:  21px;
+        font-weight: 500;
+    }
+    a:hover{
+        color: whitesmoke;
+    }
+    #button-check{
+        display: none;
+    }
+    #button-check:checked ~ ul{
+        left: 0;
+    }
+    nav ul li a.active_sign-in{
+        display: inline-block;
+        border-radius: 10px;
+    }
+    nav ul li a.active_sign-up{
+        display: inline-block;
+        border-radius: 10px;
+    }
+    .anime-img{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .anime-img img{
+        margin-top:10%;
+    }
+    #anime-header h1{
+        width: 100%;
+        height: 100%;
+        font-size: 36px;
+        margin-top: 20%;
+    }
+    .anime-overlay{
+        margin-left: -80%;
+    }
+    .anime-overlay:hover{
+        width: 199%;
+        margin-left: -100%;
+    }
+    .moving-slider{
+        margin: 20%;
+    }
+    .selection-background{
+        margin: 10% 3%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-column-gap: 15%;
+    }
+    .selection-background img{
+        width: 600%;
+        margin-left: 70%;
+    }
+    .moving-image{
+        width: 100%;
+        margin-left: 7%;
+    }
+    .slide{
+        width: 20%;
+        margin-left: 2%;
+    }
+    .slide img{
+        width: 100%;
+        height: 60%;
+        margin-left: -90%;
+        border-radius: 20px;
+    }
+    .manual-navigation{
+        margin-top: -26%;
+        margin-left: -10%;
+        display: none;
+    }
+
+    .auto-navigation{
+        margin-top: 84%;
+        margin-left: -58.7%;
+        display:none
+    }
+    .image-overlay{
+        color:white;
+        opacity: 0.7;
+        text-align: center;
+        height: 60%;
+        margin-left: -90%;
+        border-radius: 20px;
+        background: black;
+        display: flex;
+        flex-direction: column;
+        margin-top: -40.4%;
+        width: 100%;
+
+    }
+    .title{
+        font-size: 50px;
+    }
+    .description{
+        font-size: 1.2em;
+    }
+ 
+
+    .manual-btn:hover{
+        cursor: pointer;
+    }
+
+    .manual-btn:not(:last-child){
+        margin-right: 2%;
+    }
+    
+    .manual-btn:hover{
+        background: #40D3DC;
+    }
+    
+    #radio1:checked ~ .first{
+        margin-left: 12%;
+    }
+    
+    #radio2:checked ~ .first{
+        margin-left: -8%;
+    }
+    
+    #radio3:checked ~ .first{
+        margin-left: -29%;
+    }
+    
+    #radio4:checked ~ .first{
+        margin-left: -53%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
