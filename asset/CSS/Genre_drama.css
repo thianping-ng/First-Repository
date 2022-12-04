@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    background:black;
+    opacity: 0.9;
+}
+
+label.logo-name{
+    color: black;
+    font-size: 35px;
+    line-height: 90px;
+    padding: 0 20px;
+    font-weight:bold;
+}
+/*hidden the menu icon*/
+#button-check{
+    display: none;
+}
+/*set navigation bar location*/
+nav{
+    background: whitesmoke;
+    height: 10vh;
+    width: 100%;
+    margin: -1% auto;
+    position: fixed;
+    margin-left: 0%;
+    opacity: 0.6;
+    border-radius: 20px;
+    z-index: 10;
+    font-family: "Roboto",sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+/*set the navigation menu to the far right top*/
+nav ul{
+    float:right;
+    margin-right: 1%;   
+}
+/*set navigation bar inline with the logo*/
+nav ul li{
+    display: inline-block;
+    line-height: 95px;
+    margin: 0 0;
+}
+nav ul li a{
+    color: black;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight:500;
+}
+/*user can hover over the text with transition*/
+nav ul li:hover{
+    background-color:lightcoral;
+    transition: 0.5s;
+    border-radius: 20px;
+    color:black;
+    font-weight: bold;
+    cursor: pointer;
+    height: 10vh;
+}
+.menu-logo{
+    font-size: 40px;
+    color: white;
+    float:right;
+    line-height: 85px;
+    margin-right: 40px;
+    cursor: pointer;
+    display:none;
+}
+
+/*set location of the image*/
+.anime-img{
+    margin-top: 3.7%;
+    margin-left: 0%;
+    width: 90%;
+    height: 90vh;
+    border-radius: 20px;
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+a img{
+    margin-left: 19%;
+    width: 60%;
+    height: 60%;
+}
+/*set all image to be centered*/
+.action{
+    margin-top: 20%;
+    border-radius: 20px;
+    border: 2px solid whitesmoke;
+    display: grid;
+}
+/*set as current relative so that the image is retain 
+in the center*/
+.background-image{
+    position: relative;
+    list-style: none;
+    box-sizing: border-box;
+    text-decoration: none;
+    width: 100%;
+    margin-left: 6%;
+}
+/*user can interact the logo, return to home page*/
+#logo:hover{
+    background: whitesmoke;
+    opacity: 0.8;
+    cursor: pointer;
+}
+/*user can download image of their choice*/
+#download{
+    background:none;
+    height: 90%;
+}
+/*display image in grid layout*/
+.overlay{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-left: -5%;
+}
+@media screen and (max-width: 952px){
+    .anime-img{
+        height: 90%;
+        margin-top: 9%;
+        width: 99%;
+        margin-left: -4%;
+    }
+    .label{
+        margin-top: -86.9%;
+    }
+    .overlay{
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-top: -20%;
+    }
+    .action{
+        width: 90%;
+        height: 90%;
+        border: 2px solid whitesmoke;
+    }
+    #logo:hover{
+        cursor: pointer;
+    }
+    a img{
+        margin-left: 4%;
+    }
+
+}
