@@ -52,8 +52,9 @@ Technologies Used
 -<ion-icon name="menu-outline"></ion-icon>
 
 Testing 
-#-------
--contact form: 
+#------------
+contact form
+#------------
 -try submitting the contact form error message appears.
 -try to submit with an invalid email and succeed with relevant error messages.
 -not all input validation appears with relevant error messages
@@ -61,6 +62,7 @@ Testing
 -try to submit with an empty field for last name succeed with an relevant error messages.
 
 Login form:
++-----------
 -try to submit with all field required, and succeed.
 -try to submit with empty field required, relevant error messages
 appears.
@@ -69,8 +71,9 @@ appears.
 error message.
 -try to submit with an empty field for password succeed with
 relevant error message.
-
++------------
 Sign Up:
++------------
 -try to submit with all emtpy field requirement, hence not all
 appears with relevant error message.
 -try to submit empty field for first name succeed.
