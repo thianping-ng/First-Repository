@@ -3,7 +3,7 @@ Project Name : Aniyo
 Aniyo is a site that brings popular anime wallpapers to users, as anime is refer to japanese animation, it's a culture that has been popular in japan and well known globally for many years. Anime is popular because of many factors. Firstly, anime has been popular for it positive impacts towards business personnel which increase their promotion for services and products.
 
 Anime is seen as a fantasy based. The main reason is that fans have a huge fondness associated with the features of anime and dressing up as some of the characters present in the anime. In addition, anime is a positive influence that teach them to be strong like adults when they are faced with challenges in some scenario where a character that portray resilience when they are faced with challenges.
------------------------
+
 Design Process
 ---------------
 users perspective - looks for best appealing anime wallpaper to download for their desktop background
@@ -17,7 +17,7 @@ site goals - the site offers different genre of anime wallpapers for users to ch
 users perspective - to know infomation about what the site is?
 
 site goals - the site has infomation in the about section that tells users about the site history and how it came about.
----------------
+
 Features
 ---------
 Feature 1 - site allows users to choose their genre of choice for their wallpaper.
@@ -35,7 +35,7 @@ Fetures 6 - in addtion, the infinite sliding image can be manually and automatic
 Features 7 - in portrait mode, the navigation bar is hidden. however the home page logo will appear with the addition of a menu bar icon appearing on the far right which allows users to see the hidden navigation.
 
 Features 8 - in each of the genre section which the users enter, the navigation bar logo is visible, so does other navigation features which follows the user as it scrolls down. however the image will be vertically horizontal downwards.
--------------------------
+
 Features Left to implement
 
 a form filling page which the user can interact with validation. however the site won't save the infomation they've entered.
